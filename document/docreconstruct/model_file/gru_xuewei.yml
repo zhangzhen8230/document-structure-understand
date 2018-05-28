@@ -1,0 +1,113 @@
+"backend: tensorflow\nclass_name: Model\nconfig:\n  input_layers:\n  - [feature_normal,\
+  \ 0, 0]\n  - [wordduixiang, 0, 0]\n  - [bianhaoweizhi, 0, 0]\n  - [keyword, 0, 0]\n\
+  \  - [duiqifangshi, 0, 0]\n  - [dagangjibie, 0, 0]\n  - [bianhao, 0, 0]\n  layers:\n\
+  \  - class_name: InputLayer\n    config:\n      batch_input_shape: !!python/tuple\
+  \ [null, 1000]\n      dtype: float32\n      name: bianhaoweizhi\n      sparse: false\n\
+  \    inbound_nodes: []\n    name: bianhaoweizhi\n  - class_name: InputLayer\n  \
+  \  config:\n      batch_input_shape: !!python/tuple [null, 1000]\n      dtype: float32\n\
+  \      name: dagangjibie\n      sparse: false\n    inbound_nodes: []\n    name:\
+  \ dagangjibie\n  - class_name: InputLayer\n    config:\n      batch_input_shape:\
+  \ !!python/tuple [null, 1000]\n      dtype: float32\n      name: duiqifangshi\n\
+  \      sparse: false\n    inbound_nodes: []\n    name: duiqifangshi\n  - class_name:\
+  \ InputLayer\n    config:\n      batch_input_shape: !!python/tuple [null, 1000]\n\
+  \      dtype: float32\n      name: keyword\n      sparse: false\n    inbound_nodes:\
+  \ []\n    name: keyword\n  - class_name: InputLayer\n    config:\n      batch_input_shape:\
+  \ !!python/tuple [null, 1000]\n      dtype: float32\n      name: wordduixiang\n\
+  \      sparse: false\n    inbound_nodes: []\n    name: wordduixiang\n  - class_name:\
+  \ InputLayer\n    config:\n      batch_input_shape: !!python/tuple [null, 1000]\n\
+  \      dtype: float32\n      name: bianhao\n      sparse: false\n    inbound_nodes:\
+  \ []\n    name: bianhao\n  - class_name: InputLayer\n    config:\n      batch_input_shape:\
+  \ !!python/tuple [null, 1000, 8]\n      dtype: float32\n      name: feature_normal\n\
+  \      sparse: false\n    inbound_nodes: []\n    name: feature_normal\n  - class_name:\
+  \ Embedding\n    config:\n      activity_regularizer: null\n      batch_input_shape:\
+  \ !!python/tuple [null, null]\n      dtype: float32\n      embeddings_constraint:\
+  \ null\n      embeddings_initializer:\n        class_name: RandomUniform\n     \
+  \   config: {maxval: 0.05, minval: -0.05, seed: null}\n      embeddings_regularizer:\
+  \ null\n      input_dim: 4\n      input_length: null\n      mask_zero: true\n  \
+  \    name: embedding_3\n      output_dim: 4\n      trainable: true\n    inbound_nodes:\n\
+  \    - - - bianhaoweizhi\n        - 0\n        - 0\n        - {}\n    name: embedding_3\n\
+  \  - class_name: Embedding\n    config:\n      activity_regularizer: null\n    \
+  \  batch_input_shape: !!python/tuple [null, null]\n      dtype: float32\n      embeddings_constraint:\
+  \ null\n      embeddings_initializer:\n        class_name: RandomUniform\n     \
+  \   config: {maxval: 0.05, minval: -0.05, seed: null}\n      embeddings_regularizer:\
+  \ null\n      input_dim: 11\n      input_length: null\n      mask_zero: true\n \
+  \     name: embedding_6\n      output_dim: 11\n      trainable: true\n    inbound_nodes:\n\
+  \    - - - dagangjibie\n        - 0\n        - 0\n        - {}\n    name: embedding_6\n\
+  \  - class_name: Embedding\n    config:\n      activity_regularizer: null\n    \
+  \  batch_input_shape: !!python/tuple [null, null]\n      dtype: float32\n      embeddings_constraint:\
+  \ null\n      embeddings_initializer:\n        class_name: RandomUniform\n     \
+  \   config: {maxval: 0.05, minval: -0.05, seed: null}\n      embeddings_regularizer:\
+  \ null\n      input_dim: 6\n      input_length: null\n      mask_zero: true\n  \
+  \    name: embedding_5\n      output_dim: 6\n      trainable: true\n    inbound_nodes:\n\
+  \    - - - duiqifangshi\n        - 0\n        - 0\n        - {}\n    name: embedding_5\n\
+  \  - class_name: Embedding\n    config:\n      activity_regularizer: null\n    \
+  \  batch_input_shape: !!python/tuple [null, null]\n      dtype: float32\n      embeddings_constraint:\
+  \ null\n      embeddings_initializer:\n        class_name: RandomUniform\n     \
+  \   config: {maxval: 0.05, minval: -0.05, seed: null}\n      embeddings_regularizer:\
+  \ null\n      input_dim: 9\n      input_length: null\n      mask_zero: true\n  \
+  \    name: embedding_4\n      output_dim: 9\n      trainable: true\n    inbound_nodes:\n\
+  \    - - - keyword\n        - 0\n        - 0\n        - {}\n    name: embedding_4\n\
+  \  - class_name: Embedding\n    config:\n      activity_regularizer: null\n    \
+  \  batch_input_shape: !!python/tuple [null, null]\n      dtype: float32\n      embeddings_constraint:\
+  \ null\n      embeddings_initializer:\n        class_name: RandomUniform\n     \
+  \   config: {maxval: 0.05, minval: -0.05, seed: null}\n      embeddings_regularizer:\
+  \ null\n      input_dim: 5\n      input_length: null\n      mask_zero: true\n  \
+  \    name: embedding_2\n      output_dim: 5\n      trainable: true\n    inbound_nodes:\n\
+  \    - - - wordduixiang\n        - 0\n        - 0\n        - {}\n    name: embedding_2\n\
+  \  - class_name: Embedding\n    config:\n      activity_regularizer: null\n    \
+  \  batch_input_shape: !!python/tuple [null, null]\n      dtype: float32\n      embeddings_constraint:\
+  \ null\n      embeddings_initializer:\n        class_name: RandomUniform\n     \
+  \   config: {maxval: 0.05, minval: -0.05, seed: null}\n      embeddings_regularizer:\
+  \ null\n      input_dim: 11\n      input_length: null\n      mask_zero: true\n \
+  \     name: embedding_1\n      output_dim: 11\n      trainable: true\n    inbound_nodes:\n\
+  \    - - - bianhao\n        - 0\n        - 0\n        - {}\n    name: embedding_1\n\
+  \  - class_name: Concatenate\n    config: {axis: -1, name: concatenate_1, trainable:\
+  \ true}\n    inbound_nodes:\n    - - - feature_normal\n        - 0\n        - 0\n\
+  \        - &id001 {}\n      - - embedding_3\n        - 0\n        - 0\n        -\
+  \ *id001\n      - - embedding_6\n        - 0\n        - 0\n        - *id001\n  \
+  \    - - embedding_5\n        - 0\n        - 0\n        - *id001\n      - - embedding_4\n\
+  \        - 0\n        - 0\n        - *id001\n      - - embedding_2\n        - 0\n\
+  \        - 0\n        - *id001\n      - - embedding_1\n        - 0\n        - 0\n\
+  \        - *id001\n    name: concatenate_1\n  - class_name: Masking\n    config:\
+  \ {mask_value: 0, name: masking_1, trainable: true}\n    inbound_nodes:\n    - -\
+  \ - concatenate_1\n        - 0\n        - 0\n        - {}\n    name: masking_1\n\
+  \  - class_name: Bidirectional\n    config:\n      layer:\n        class_name: GRU\n\
+  \        config:\n          activation: tanh\n          activity_regularizer: null\n\
+  \          bias_constraint: null\n          bias_initializer:\n            class_name:\
+  \ Zeros\n            config: {}\n          bias_regularizer: null\n          dropout:\
+  \ 0.2\n          go_backwards: false\n          implementation: 1\n          kernel_constraint:\
+  \ null\n          kernel_initializer:\n            class_name: VarianceScaling\n\
+  \            config: {distribution: uniform, mode: fan_avg, scale: 1.0, seed: null}\n\
+  \          kernel_regularizer: null\n          name: gru_1\n          recurrent_activation:\
+  \ hard_sigmoid\n          recurrent_constraint: null\n          recurrent_dropout:\
+  \ 0.0\n          recurrent_initializer:\n            class_name: Orthogonal\n  \
+  \          config: {gain: 1.0, seed: null}\n          recurrent_regularizer: null\n\
+  \          return_sequences: true\n          return_state: false\n          stateful:\
+  \ false\n          trainable: true\n          units: 32\n          unroll: false\n\
+  \          use_bias: true\n      merge_mode: concat\n      name: bidirectional_1\n\
+  \      trainable: true\n    inbound_nodes:\n    - - - masking_1\n        - 0\n \
+  \       - 0\n        - {}\n    name: bidirectional_1\n  - class_name: TimeDistributed\n\
+  \    config:\n      layer:\n        class_name: Dense\n        config:\n       \
+  \   activation: linear\n          activity_regularizer: null\n          bias_constraint:\
+  \ null\n          bias_initializer:\n            class_name: Zeros\n           \
+  \ config: {}\n          bias_regularizer: null\n          kernel_constraint: null\n\
+  \          kernel_initializer:\n            class_name: VarianceScaling\n      \
+  \      config: {distribution: uniform, mode: fan_avg, scale: 1.0, seed: null}\n\
+  \          kernel_regularizer: null\n          name: dense_1\n          trainable:\
+  \ true\n          units: 23\n          use_bias: true\n      name: time_distributed_1\n\
+  \      trainable: true\n    inbound_nodes:\n    - - - bidirectional_1\n        -\
+  \ 0\n        - 0\n        - {}\n    name: time_distributed_1\n  - class_name: CRF\n\
+  \    config:\n      activation: linear\n      bias_constraint: null\n      bias_initializer:\n\
+  \        class_name: Zeros\n        config: {}\n      bias_regularizer: null\n \
+  \     boundary_constraint: null\n      boundary_initializer:\n        class_name:\
+  \ Zeros\n        config: {}\n      boundary_regularizer: null\n      chain_constraint:\
+  \ null\n      chain_initializer:\n        class_name: Orthogonal\n        config:\
+  \ {gain: 1.0, seed: null}\n      chain_regularizer: null\n      input_dim: 23\n\
+  \      kernel_constraint: null\n      kernel_initializer:\n        class_name: VarianceScaling\n\
+  \        config: {distribution: uniform, mode: fan_avg, scale: 1.0, seed: null}\n\
+  \      kernel_regularizer: null\n      learn_mode: join\n      name: crf_1\n   \
+  \   sparse_target: false\n      test_mode: viterbi\n      trainable: true\n    \
+  \  units: 23\n      unroll: false\n      use_bias: true\n      use_boundary: true\n\
+  \    inbound_nodes:\n    - - - time_distributed_1\n        - 0\n        - 0\n  \
+  \      - {}\n    name: crf_1\n  name: model_1\n  output_layers:\n  - [crf_1, 0,\
+  \ 0]\nkeras_version: 2.1.3\n"

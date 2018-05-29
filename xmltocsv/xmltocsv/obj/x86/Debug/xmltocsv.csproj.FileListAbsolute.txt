@@ -1,0 +1,16 @@
+C:\Users\zhangzhen\documents\visual studio 2010\Projects\xmltocsv\xmltocsv\bin\Debug\xmltocsv.exe
+C:\Users\zhangzhen\documents\visual studio 2010\Projects\xmltocsv\xmltocsv\bin\Debug\xmltocsv.pdb
+C:\Users\zhangzhen\documents\visual studio 2010\Projects\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.csprojResolveAssemblyReference.cache
+C:\Users\zhangzhen\documents\visual studio 2010\Projects\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.Form1.resources
+C:\Users\zhangzhen\documents\visual studio 2010\Projects\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.Properties.Resources.resources
+C:\Users\zhangzhen\documents\visual studio 2010\Projects\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.csproj.GenerateResource.Cache
+C:\Users\zhangzhen\documents\visual studio 2010\Projects\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.exe
+C:\Users\zhangzhen\documents\visual studio 2010\Projects\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.pdb
+E:\课题\实验\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.exe
+E:\课题\实验\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.pdb
+E:\课题\实验\xmltocsv\xmltocsv\bin\Debug\xmltocsv.exe
+E:\课题\实验\xmltocsv\xmltocsv\bin\Debug\xmltocsv.pdb
+E:\课题\实验\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.csprojResolveAssemblyReference.cache
+E:\课题\实验\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.Form1.resources
+E:\课题\实验\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.Properties.Resources.resources
+E:\课题\实验\xmltocsv\xmltocsv\obj\x86\Debug\xmltocsv.csproj.GenerateResource.Cache
